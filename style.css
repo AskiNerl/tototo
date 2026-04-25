@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color:midnightblue;
+}
+#btn{
+
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+        background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top:30px;
+}
+#text {
+    font-size: 20px;
+    margin-top: 28px;
+    color: white;
+}
+#count {
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+}
+.typing-container {
+    display: flex;
+    justify-content: center;
+}
+
+.typing-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.typing {
+    font-family: monospace;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid black;
+    color: white;
+    width: 21ch; 
+    animation: typing 3s steps(21) forwards, blink 0.75s step-end infinite;
+    
+   
+    font-size: 33px;
+}
+
+
+@media (max-width: 480px) {
+    .typing {
+        
+        font-size: 4.5vw; 
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+.red {
+    background-color: red;
+    color:white
+}
